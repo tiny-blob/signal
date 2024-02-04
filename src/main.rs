@@ -4,6 +4,6 @@ fn main() {
 
                     println!("Welcome to Reel")   ;
 
-                    println!("A location based photo sharing platform")
+                            println!("A location based photo sharing platform")
 
 }
