@@ -1,13 +1,3 @@
 fn main() {
-                                
-
-
-
-
-
-
-
-
-                                                println!("Welcome to Reel");
-
+    println!("Welcome to Reel");
 }
