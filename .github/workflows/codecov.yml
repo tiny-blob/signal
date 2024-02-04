@@ -1,6 +1,6 @@
 name: coverage
-
 on: [push]
+
 jobs:
   test:
     name: coverage
