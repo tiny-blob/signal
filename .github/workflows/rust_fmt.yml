@@ -14,5 +14,5 @@ jobs:
           components: rustfmt
       - uses: mbrobbel/rustfmt-check@master
         with:
-          token: ${{ secrets.RUST_FMT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           mode: review
