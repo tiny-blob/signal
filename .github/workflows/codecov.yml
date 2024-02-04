@@ -1,6 +1,6 @@
-name: coverage
-
+name: Code coverage
 on: [push]
+
 jobs:
   test:
     name: coverage
