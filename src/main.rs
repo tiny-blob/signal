@@ -1,10 +1,13 @@
 use solana_client::pubsub_client::PubsubClient;
 use solana_client::rpc_config::{RpcTransactionLogsConfig, RpcTransactionLogsFilter};
 use solana_sdk::commitment_config::CommitmentConfig;
+use solana_sdk::pubkey::Pubkey;
+use std::str::FromStr;
 
 fn main() {
+    let program_id = Pubkey::from_str("75VDxUWxEWXCztw4br1CNBZVRK2onPZ1SJCwXRZRHd38").unwrap();
     let ws_url = String::from("wss://api.devnet.solana.com/");
-    let filter = RpcTransactionLogsFilter::All;
+    let filter = RpcTransactionLogsFilter::Mentions(vec![program_id.to_string()]);
     let config = RpcTransactionLogsConfig {
         commitment: Some(CommitmentConfig::finalized()),
     };
